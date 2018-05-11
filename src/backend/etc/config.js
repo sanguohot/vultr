@@ -1,6 +1,7 @@
 exports.prop = {
 	"web_port": 10443,
 	"https":true,
+    "https_path":"e:/evan/nodejs/vultr/src/backend/key",
 	"key":"privkey.pem",
     "cert":"fullchain.pem",
     "ca":"chain.pem",

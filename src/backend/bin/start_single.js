@@ -12,9 +12,9 @@ function start(){
     var server = null;
     if(gprop.https){
         var options = {
-            key: fs.readFileSync(gprop.server_path+"/src/backend/key/"+gprop.key),
-            cert: fs.readFileSync(gprop.server_path+"/src/backend/key/"+gprop.cert),
-            ca: [fs.readFileSync(gprop.server_path+"/src/backend/key/"+gprop.ca)]
+            key: fs.readFileSync(gprop.https_path+"/"+gprop.key),
+            cert: fs.readFileSync(gprop.https_path+"/"+gprop.cert),
+            ca: [fs.readFileSync(gprop.https_path+"/"+gprop.ca)]
         };
         server=https.createServer(options,app);
     }else{

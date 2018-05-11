@@ -1,6 +1,7 @@
 exports.prop = {
     "web_port": 10443,
     "https":true,
+    "https_path":"/etc/letsencrypt/live/sanguohot.tk",
     "key":"privkey.pem",
     "cert":"fullchain.pem",
     "ca":"chain.pem",
