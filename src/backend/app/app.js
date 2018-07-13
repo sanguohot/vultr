@@ -1,7 +1,8 @@
 /**
  * Created by Evan on 2016/7/22.
  */
-const gprop = require('../etc/config').prop;
+const os = require("os");
+const gprop = require('../etc/'+(os.platform()=="linux"?"config-linux":"config")).prop;
 const log = require('../controllers/log');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');

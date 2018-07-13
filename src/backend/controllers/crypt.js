@@ -1,4 +1,5 @@
-var gprop = require('../etc/config').prop;
+const os = require("os");
+const gprop = require('../etc/'+(os.platform()=="linux"?"config-linux":"config")).prop;
 if(typeof __line=="undefined" && gprop.codeline){
     require('magic-globals');
 }else{

@@ -1,7 +1,8 @@
 /**
  * Created by evan on 2016/06/01.
  */
-const gprop = require('../etc/config').prop;
+const os = require("os");
+const gprop = require('../etc/'+(os.platform()=="linux"?"config-linux":"config")).prop;
 const http = require('http');
 const https = require('https');
 const fs = require("fs");
